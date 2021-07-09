@@ -1,0 +1,1310 @@
+CRITICAL - 2021-07-09 02:02:27 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:55 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:56 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:57 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:57 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:57 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:57 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:57 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:58 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:02:58 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:03:07 --> Class 'BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:03:54 --> Class 'App\Controllers\CodeIgniter\Controller' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 02:36:08 --> Using $this when not in object context
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth::getId()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:16:03 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:17:53 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:17:56 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:17:56 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:17:56 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:17:56 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:17:56 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:18:03 --> Call to a member function select() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:01 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:02 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:03 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:04 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:04 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:04 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:04 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:04 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:05 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:06 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:07 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:07 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:07 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:08 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:08 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:08 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:08 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:08 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:09 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:10 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:10 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:10 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:21:10 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:41 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:43 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:43 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:44 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:45 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:22:59 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:23:00 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:23:00 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:23:00 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:23:01 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:23:02 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:26:25 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:26:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:26:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:26:27 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:27:24 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(50): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:27:24 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\_7_5_ci_software\wampServer\www\ci\app\Config\Events.php:35) in D:\_7_5_ci_software\wampServer\www\ci\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\_7_5_ci_soft...', 137, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 03:27:52 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:27:58 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:27:58 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:27:59 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:27:59 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:27 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:28 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:28 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:29 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:34 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:35 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:35 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:36 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:36 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:53 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:54 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:54 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:55 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:29:55 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:34:04 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:34:12 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:34:13 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:34:13 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:34:13 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:14 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:15 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:16 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:16 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:16 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:16 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:17 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:17 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:17 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:18 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:18 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:18 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:18 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:19 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:19 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:20 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:49 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:50 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:50 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:36:50 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:41 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:42 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:48 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:48 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:40:48 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:18 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:19 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:19 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:50 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:51 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:51 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:42:52 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:25 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:26 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:28 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:29 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:29 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:29 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:29 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:45:29 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:47:55 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:48:39 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:52:23 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:52:50 --> Call to a member function database() on null
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:54:50 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:56:21 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 03:56:22 --> Class 'App\Models\UsersModel' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-07-09 03:59:34 --> mysqli_sql_exception: Table 'project1.tp_user' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\app\Models\UsersModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(13): App\Models\UsersModel->getdata()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-07-09 03:59:35 --> mysqli_sql_exception: Table 'project1.tp_user' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\app\Models\UsersModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(13): App\Models\UsersModel->getdata()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-07-09 03:59:48 --> mysqli_sql_exception: Table 'project1.tp_user' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\app\Models\UsersModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): App\Models\UsersModel->getdata()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-07-09 04:00:05 --> mysqli_sql_exception: Table 'project1.tp_user' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\app\Models\UsersModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): App\Models\UsersModel->getdata()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-07-09 04:00:06 --> mysqli_sql_exception: Table 'project1.tp_user' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\app\Models\UsersModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): App\Models\UsersModel->getdata()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-07-09 04:00:58 --> mysqli_sql_exception: Table 'project1.tp_user' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\app\Models\UsersModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): App\Models\UsersModel->getdata()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-07-09 04:01:23 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:01:31 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:01:32 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:01:33 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:01:39 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-09 04:01:39 --> Object of class mysqli could not be converted to string
+#0 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(17): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'D:\\_7_5_ci_soft...', 17, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-07-09 04:02:53 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:03:38 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:03:39 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:03:40 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\Model->__call('get', Array)
+#6 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-09 04:04:54 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:05:08 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:05:13 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:05:14 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:05:25 --> mysqli_sql_exception: Table 'project1.project1' doesn't exist in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:06:04 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:06:05 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-07-09 04:06:05 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\_7_5_ci_software\wampServer\www\ci\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->test()
+#8 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-07-09 04:09:22 --> Access level to App\Models\UsersModel::$db must be protected (as in class CodeIgniter\Model) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-09 04:15:48 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:16:14 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:21:08 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:22:36 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:24:48 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:31:04 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:31:16 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:31:26 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:31:42 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:32:42 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:32:53 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:33:15 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:33:40 --> Class 'App\Controllers\DateTime' not found
+#0 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#1 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-09 04:55:18 --> json_decode() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() e...', 'D:\\_7_5_ci_soft...', 41, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(41): json_decode(Array, true)
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-09 04:55:26 --> json_decode() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() e...', 'D:\\_7_5_ci_soft...', 41, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(41): json_decode(Array, true)
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-09 04:56:31 --> json_decode() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() e...', 'D:\\_7_5_ci_soft...', 41, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(41): json_decode(Array, true)
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-09 04:56:42 --> json_decode() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() e...', 'D:\\_7_5_ci_soft...', 41, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(41): json_decode(Array, true)
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-09 04:56:57 --> json_decode() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() e...', 'D:\\_7_5_ci_soft...', 41, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(41): json_decode(Array, true)
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-09 05:00:40 --> array_keys() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_keys() ex...', 'D:\\_7_5_ci_soft...', 41, Array)
+#1 D:\_7_5_ci_software\wampServer\www\ci\app\Controllers\Auth.php(41): array_keys(NULL)
+#2 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(935): App\Controllers\Auth->register()
+#3 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\_7_5_ci_software\wampServer\www\ci\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\_7_5_ci_software\wampServer\www\ci\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#6 {main}
