@@ -2,39 +2,21 @@
 
 
 namespace App\Controllers;
+
 use App\Models\UsersModel;
 
 class Auth extends BaseController
 {
+    //测试用
     public function test()
     {
-//        $this->load->database("project1");
-        $model = new UsersModel();
-        echo gettype($model);
-        $rst = $model->getdata();
-        foreach ($rst as $row) {
-            echo 1;
-            echo '编号: ' . $row->id;
-            echo '唯一值: ' . $row->username;
-            echo '<br>';
-        }
-//        $model->insert([
-//            "username"=>'img1wpng',
-//            "nickname"=>"img1wpng",
-//            "password"=>"Myafsfsfsfspost",
-//            "email"=>"Lorem ispsum bababa",
-//            "birthday"=>"1999-09-09",
-//            "sex"=>"1",
-//            "province"=>"1",
-//            "city"=>"1",
-//            "area"=>"1",
-//            "last_login_at"=>date("Y-m-d H:i:s"),
-//            "updated_at"=>date("Y-m-d H:i:s"),
-//            "created_at"=>date("Y-m-d H:i:s"),
-//        ]);
 
     }
 
+
+    /**
+     * @throws \ReflectionException
+     */
     public function register()
     {
         $ans = array("status" => "200");
@@ -422,7 +404,7 @@ class Auth extends BaseController
         $area = $data["area"];
 
         //正则验证
-        if (!preg_match("/^[A-Za-z0-9]+([_]+[A-Za-z0-9]+)*@([A-Za-z0-9-]+\.)+[A-Za-z]{2,6}$/", $email)) {
+        if (!preg_match("/^[A-Za-z0-9]+([_]+[A-Za-z0-9]+)*@([A-Za-z0-9-]+_)+[A-Za-z]{2,6}$/", $email)) {
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
@@ -437,7 +419,7 @@ class Auth extends BaseController
             exit(json_encode($ans));
         }
 
-        if (!preg_match("/^.{6,32}$/", $password)) {
+        if (!preg_match("/^[0-9a-z]{32}$/", $password)) {
             $ans["status"] = 2004;
             exit(json_encode($ans));
         }
@@ -448,16 +430,15 @@ class Auth extends BaseController
         }
 
         try {
-
-            exit(json_encode($ans));
-            $birthday = new DateTime($data["birthday"]);
-
-            if ($birthday > new DateTime()) {
+            $birthday = str_replace("T"," ",$data["birthday"]);
+            $birthday = str_replace("_000Z","",$birthday);
+            $birthday = new \DateTime($birthday);
+            if ($birthday > new \DateTime()) {
                 //日期超过今天
+                $birthday = $birthday->modify("+8 hour");
                 $ans["status"] = 2006;
                 exit(json_encode($ans));
             }
-
         } catch (Exception $e) {
             //日期输入格式不对
             $ans["status"] = 2007;
@@ -494,27 +475,28 @@ class Auth extends BaseController
             exit(json_encode($ans));
         }
 
+        $model = new UsersModel();
+
         //查询是否有这个用户
-        $sql = "select username from users where username = '$username'";
-        $result = mysqli_query($conn, $sql);
-        if (mysqli_fetch_array($result)) {
+        $rst = $model->usernameQuery($username);
+        if (count($rst) > 0) {
             //用户名已存在
             $ans["status"] = 3003;
             exit(json_encode($ans));
         }
 
-        $date = date("Y-m-d H:i:s");
+        //插入
+        $date = new \DateTime();
+        $date = $date->modify("+8 hour")->format("Y-m-d H:i:s");
         $birthday = $birthday->format("Y-m-d");
-        $sql = "INSERT INTO users " .
-            "(username,nickname, password,email,birthday,sex,province,city,area,last_login_at,updated_at,created_at) " .
-            "VALUES " .
-            "('$username','$nickname','$password','$email','$birthday','$sex','$province','$city','$area','$date','$date','$date')";
-
-        $result = mysqli_query($conn, $sql);
-        if (!$result) {
+        $rst = $model->insert(array($username,$nickname,$password,$email,$birthday,$sex,$province,$city,$area,$date,$date,$date));
+        if($rst->connID->errno!==0){
             //插入数据库失败
-            $ans["status"] = 3004;
+            echo 3004;
         }
+
+
+
         session_start();
         $_SESSION["project1_username"] = $username;
         $_SESSION["project1_password"] = $password;
@@ -543,38 +525,26 @@ class Auth extends BaseController
             $ans["status"] = 2002;
             exit(json_encode($ans));
         }
-        if (!preg_match("/^.{6,32}$/", $password)) {
+        if (!preg_match("/^[0-9a-z]{32}$/", $password)) {
             $ans["status"] = 2004;
             exit(json_encode($ans));
         }
 
-        //连接数据库
-        $conn = mysqli_connect("localhost", "root", "wi2MyfO4,ci&", "project1");
-        if (!$conn) {
-            //数据库连接失败
-            $ans["status"] = 3001;
-            exit(json_encode($ans));
-        }
-        if (!mysqli_set_charset($conn, "utf8MB4")) {
-            //字符集设置失败
-            $ans["status"] = 3002;
-            exit(json_encode($ans));
-        }
+        $model = new UsersModel();
 
-        //查询用户名与密码正确性
-        $sql = "select id from users where username = '$username' and password = '$password'";
-        $result = mysqli_query($conn, $sql);
-        if (mysqli_fetch_array($result)) {
+        //查询是否有这个用户
+        $rst = $model->loginQuery($username,$password);
+        if (count($rst) > 0) {
             //用户名成功登录，写session
             session_start();
             $_SESSION["project1_username"] = $username;
             $_SESSION["project1_password"] = $password;
             session_write_close();
-        } else {
+        }
+        else{
             //用户名和密码不正确
             $ans["status"] = 4001;
         }
-
         exit(json_encode($ans));
     }
 
