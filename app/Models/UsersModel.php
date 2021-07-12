@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use mysql_xdevapi\Exception;
 
 class UsersModel extends Model
 {
     protected $db;
+
     function __construct()
     {
         parent::__construct();
@@ -14,27 +16,46 @@ class UsersModel extends Model
         $this->db = \Config\Database::connect();
     }
 
+    //测试用
     function getdata()
     {
-        //sql语句
+
         $sql = "SELECT * FROM users ";
-        //$sqlrst = $this->Db->query($sql)->getResultArray();
-        //上面的一行是返回数组，下面的一行是返回对象
-        $sqlrst = $this->db->query($sql)->getResult();
-        return $sqlrst;
+        return $this->db->query($sql)->getResult();
     }
 
-    function insert($array)
+    //插入
+    function insert($data = NULL, bool $returnID = true)
     {
-        $sql = "INSERT INTO users " .
-            "(username,nickname, password,email,birthday,sex,province,city,area,last_login_at,updated_at,created_at) " .
-            "VALUES " .
-            "('$array[0]','$array[1]','$array[2]','$array[3]','$array[4]','$array[5]','$array[6]','$array[0]','$array[0]','$array[0]','$array[0]','$array[0]')";
-
-        $sql = "SELECT * FROM users ";
-        //$sqlrst = $this->Db->query($sql)->getResultArray();
-        //上面的一行是返回数组，下面的一行是返回对象
-        $sqlrst = $this->db->query($sql)->getResult();
-        return $sqlrst;
+        if ($data != NULL) {
+            $sql = "INSERT INTO users " .
+                "(username,nickname, password,email,birthday,sex,province,city,area,last_login_at,updated_at,created_at) " .
+                "VALUES " .
+                "(?,?,?,?,?,?,?,?,?,?,?,?)";
+            return $this->db->query($sql, array($data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8], $data[9], $data[10], $data[11]));
+        }
+        return false;
     }
+
+    //用户名记录查询
+    function usernameQuery($username = NULL)
+    {
+        if ($username != NULL) {
+            $sql = "select username from users where username = ?";
+            return $this->db->query($sql, array($username))->getResult();
+        }
+        return false;
+    }
+
+    //登录查询用户名密码是否正确
+    function loginQuery($username = NULL, $password = NULL)
+    {
+        if ($username != NULL && $password != NULL) {
+            $sql = "select username from users where username = ? and password = ?";
+            return $this->db->query($sql, array($username, $password))->getResult();
+        }
+        return false;
+    }
+
+
 }
