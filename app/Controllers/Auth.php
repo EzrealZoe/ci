@@ -500,6 +500,7 @@ class Auth extends BaseController
         session_start();
         $_SESSION["project1_username"] = $username;
         $_SESSION["project1_password"] = $password;
+        setcookie(session_name(),session_id(),time()+86400);
         session_write_close();
 
 
@@ -541,6 +542,7 @@ class Auth extends BaseController
             session_start();
             $_SESSION["project1_username"] = $username;
             $_SESSION["project1_password"] = $password;
+            setcookie(session_name(),session_id(),time()+86400);
             session_write_close();
         }
         else{
@@ -558,6 +560,7 @@ class Auth extends BaseController
         if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
             unset($_SESSION["project1_username"]);
             unset($_SESSION["project1_password"]);
+            setcookie(session_name(),session_id(),time()-1);
         }
         session_write_close();
 
