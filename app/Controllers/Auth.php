@@ -20,7 +20,7 @@ class Auth extends BaseController
     public function register()
     {
         $ans = array("status" => "200");
-        $data = json_decode(array_keys($_POST)[0], true);
+        $data = $_POST;
         //地区信息
         $district_cate = array();
         $district_cate[1] = [40000];
@@ -404,7 +404,7 @@ class Auth extends BaseController
         $area = $data["area"];
 
         //正则验证
-        if (!preg_match("/^[A-Za-z0-9]+([_]+[A-Za-z0-9]+)*@([A-Za-z0-9-]+_)+[A-Za-z]{2,6}$/", $email)) {
+        if (!preg_match("/^[A-Za-z0-9]+([_]+[A-Za-z0-9]+)*@([A-Za-z0-9-]+.)+[A-Za-z]{2,6}$/", $email)) {
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
@@ -510,14 +510,16 @@ class Auth extends BaseController
     {
         $ans = array("status" => "200");
         session_start();
+
         if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
             $username = $_SESSION["project1_username"];
             $password = $_SESSION["project1_password"];
         } else {
-            $data = json_decode(array_keys($_POST)[0], true);
+            $data = $_POST;
             $username = $data["username"];
             $password = $data["password"];
         }
+
         session_write_close();
 
         //正则验证用户名和密码
