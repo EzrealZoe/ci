@@ -19,7 +19,7 @@ class Auth extends BaseController
      */
     public function register()
     {
-        $ans = array("status" => "200");
+        $ans = array("status" => "1");
         $data = $_POST;
         //地区信息
         $district_cate = array();
@@ -509,7 +509,7 @@ class Auth extends BaseController
 
     public function login()
     {
-        $ans = array("status" => "200");
+        $ans = array("status" => "1");
         session_start();
 
         if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
@@ -554,7 +554,7 @@ class Auth extends BaseController
 
     public function exit()
     {
-        $ans = array("status" => "200");
+        $ans = array("status" => "1");
         session_start();
         //删除session
         if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
