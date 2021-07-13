@@ -25,38 +25,36 @@ class UsersModel extends Model
     }
 
     //插入
-    function insert($data = NULL, bool $returnID = true)
+    function insert($data = null, bool $returnID = true)
     {
-        if ($data != NULL) {
+        if ($data != null) {
             return $this->db->insert($data);
         }
         return false;
     }
 
     //用户名记录查询
-    function usernameQuery($username = NULL)
+    function usernameQuery($username = null)
     {
-        if ($username != NULL) {
+        if ($username != null) {
             return $this->db->select('username')
                 ->where('username', $username)
-                ->get(0,1)
+                ->get(0, 1)
                 ->getResult();
         }
         return false;
     }
 
     //登录查询用户名密码是否正确
-    function loginQuery($username = NULL, $password = NULL)
+    function loginQuery($username = null, $password = null)
     {
-        if ($username != NULL && $password != NULL) {
+        if ($username != null && $password != null) {
             return $this->db->select('username')
                 ->where('username', $username)
                 ->where('password', $password)
-                ->get(0,1)
+                ->get(0, 1)
                 ->getResult();
         }
         return false;
     }
-
-
 }

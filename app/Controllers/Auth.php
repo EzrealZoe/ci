@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Controllers;
 
 use App\Models\UsersModel;
@@ -10,7 +9,6 @@ class Auth extends BaseController
     //测试用
     public function test()
     {
-
     }
 
 
@@ -476,7 +474,7 @@ class Auth extends BaseController
         $data['updated_at'] = $date;
         $data['created_at'] = $date;
         $rst = $model->insert($data);
-        if($rst->connID->errno!==0){
+        if ($rst->connID->errno !== 0) {
             //插入数据库失败
             echo 3004;
         }
@@ -486,7 +484,7 @@ class Auth extends BaseController
         session_start();
         $_SESSION["project1_username"] = $username;
         $_SESSION["project1_password"] = $password;
-        setcookie(session_name(),session_id(),time()+86400);
+        setcookie(session_name(), session_id(), time() + 86400);
         session_write_close();
 
 
@@ -522,16 +520,15 @@ class Auth extends BaseController
         $model = new UsersModel();
 
         //查询是否有这个用户
-        $rst = $model->loginQuery($username,$password);
+        $rst = $model->loginQuery($username, $password);
         if (count($rst) > 0) {
             //用户名成功登录，写session
             session_start();
             $_SESSION["project1_username"] = $username;
             $_SESSION["project1_password"] = $password;
-            setcookie(session_name(),session_id(),time()+86400);
+            setcookie(session_name(), session_id(), time() + 86400);
             session_write_close();
-        }
-        else{
+        } else {
             //用户名和密码不正确
             $ans["status"] = 4001;
         }
@@ -546,12 +543,10 @@ class Auth extends BaseController
         if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
             unset($_SESSION["project1_username"]);
             unset($_SESSION["project1_password"]);
-            setcookie(session_name(),session_id(),time()-1);
+            setcookie(session_name(), session_id(), time() - 1);
         }
         session_write_close();
 
         exit(json_encode($ans));
     }
-
-
 }
