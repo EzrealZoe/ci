@@ -10,11 +10,7 @@ class Auth extends BaseController
     //测试用
     public function test()
     {
-        $model = new UsersModel();
 
-        //查询是否有这个用户
-        $rst = $model->insert(array("username"=>"gbertgbe",));
-        var_dump($rst);
     }
 
 
