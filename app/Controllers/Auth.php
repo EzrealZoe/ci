@@ -459,18 +459,6 @@ class Auth extends BaseController
             exit(json_encode($ans));
         }
 
-        //连接数据库
-        $conn = mysqli_connect("localhost", "root", "wi2MyfO4,ci&", "project1");
-        if (!$conn) {
-            //数据库连接失败
-            $ans["status"] = 3001;
-            exit(json_encode($ans));
-        }
-        if (!mysqli_set_charset($conn, "utf8MB4")) {
-            //字符集设置失败
-            $ans["status"] = 3002;
-            exit(json_encode($ans));
-        }
 
         $model = new UsersModel();
 
