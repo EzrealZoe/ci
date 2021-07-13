@@ -430,12 +430,9 @@ class Auth extends BaseController
         }
 
         try {
-            $birthday = str_replace("T"," ",$data["birthday"]);
-            $birthday = str_replace("_000Z","",$birthday);
-            $birthday = new \DateTime($birthday);
+            $birthday = new \DateTime($data["birthday"]);
             if ($birthday > new \DateTime()) {
                 //日期超过今天
-                $birthday = $birthday->modify("+8 hour");
                 $ans["status"] = 2006;
                 exit(json_encode($ans));
             }
@@ -486,8 +483,7 @@ class Auth extends BaseController
         }
 
         //插入
-        $date = new \DateTime();
-        $date = $date->modify("+8 hour")->format("Y-m-d H:i:s");
+        $date = (new \DateTime())->format("Y-m-d H:i:s");
         $birthday = $birthday->format("Y-m-d");
         $rst = $model->insert(array($username,$nickname,$password,$email,$birthday,$sex,$province,$city,$area,$date,$date,$date));
         if($rst->connID->errno!==0){
