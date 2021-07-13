@@ -10,7 +10,11 @@ class Auth extends BaseController
     //测试用
     public function test()
     {
+        $model = new UsersModel();
 
+        //查询是否有这个用户
+        $rst = $model->insert(array("username"=>"gbertgbe",));
+        var_dump($rst);
     }
 
 
@@ -394,7 +398,7 @@ class Auth extends BaseController
         $district_cate[42232] = [42233, 42234, 42235, 42236, 42237, 42238, 42239];
         $district_cate[42253] = [42254];
 
-        $email = $data["mail"];
+        $email = $data["email"];
         $username = $data["username"];
         $nickname = $data["nickname"];
         $password = $data["password"];
@@ -472,8 +476,10 @@ class Auth extends BaseController
 
         //插入
         $date = (new \DateTime())->format("Y-m-d H:i:s");
-        $birthday = $birthday->format("Y-m-d");
-        $rst = $model->insert(array($username,$nickname,$password,$email,$birthday,$sex,$province,$city,$area,$date,$date,$date));
+        $data['last_login_at'] = $date;
+        $data['updated_at'] = $date;
+        $data['created_at'] = $date;
+        $rst = $model->insert($data);
         if($rst->connID->errno!==0){
             //插入数据库失败
             echo 3004;

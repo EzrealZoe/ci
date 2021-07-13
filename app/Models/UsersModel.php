@@ -13,7 +13,7 @@ class UsersModel extends Model
     {
         parent::__construct();
         //创建数据库连接
-        $this->db = \Config\Database::connect();
+        $this->db = \Config\Database::connect()->table('users');
     }
 
     //测试用
@@ -28,11 +28,7 @@ class UsersModel extends Model
     function insert($data = NULL, bool $returnID = true)
     {
         if ($data != NULL) {
-            $sql = "INSERT INTO users " .
-                "(username,nickname, password,email,birthday,sex,province,city,area,last_login_at,updated_at,created_at) " .
-                "VALUES " .
-                "(?,?,?,?,?,?,?,?,?,?,?,?)";
-            return $this->db->query($sql, array($data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8], $data[9], $data[10], $data[11]));
+            return $this->db->insert($data);
         }
         return false;
     }
@@ -41,8 +37,10 @@ class UsersModel extends Model
     function usernameQuery($username = NULL)
     {
         if ($username != NULL) {
-            $sql = "select username from users where username = ?";
-            return $this->db->query($sql, array($username))->getResult();
+            return $this->db->select('username')
+                ->where('username', $username)
+                ->get(0,1)
+                ->getResult();
         }
         return false;
     }
@@ -51,8 +49,11 @@ class UsersModel extends Model
     function loginQuery($username = NULL, $password = NULL)
     {
         if ($username != NULL && $password != NULL) {
-            $sql = "select username from users where username = ? and password = ?";
-            return $this->db->query($sql, array($username, $password))->getResult();
+            return $this->db->select('username')
+                ->where('username', $username)
+                ->where('password', $password)
+                ->get(0,1)
+                ->getResult();
         }
         return false;
     }
