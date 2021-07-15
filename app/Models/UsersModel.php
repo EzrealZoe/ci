@@ -46,12 +46,40 @@ class UsersModel extends Model
     public function loginQuery($username = null, $password = null)
     {
         if ($username != null && $password != null) {
-            return $this->db->select('username')
+            return $this->db->select('id')
                 ->where('username', $username)
                 ->where('password', $password)
                 ->get(0, 1)
                 ->getResult();
         }
         return false;
+    }
+
+    //封禁用户
+    public function block($id = null)
+    {
+        if ($id != null) {
+            return $this->db->where('id', $id)
+                ->update(array('disable' => 1));
+        }
+        return false;
+    }
+
+    //解封用户
+    public function unblock($id = null)
+    {
+        if ($id != null) {
+            return $this->db->where('id', $id)
+                ->update(array('disable' => 0));
+        }
+        return false;
+    }
+
+    //分页查看用户信息
+    public function post($pages = 0): array
+    {
+        return $this->db->select('id,nickname,post_num,comment_num')
+            ->get($pages * 50, 50)
+            ->getResult();
     }
 }

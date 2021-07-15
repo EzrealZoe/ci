@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\AdminModel;
+use App\Models\ForumModel;
 use App\Models\UsersModel;
 use DateTime;
 use Exception;
@@ -12,6 +14,8 @@ class Auth extends BaseController
     //测试用
     public function test()
     {
+        $mo = new ForumModel();
+        $mo->changeOrder(1, 5256);
     }
 
 
@@ -1181,20 +1185,23 @@ class Auth extends BaseController
         exit(json_encode($ans));
     }
 
-    public function login()
+    private function authenticate($model)
     {
         $ans = array("status" => "1");
         session_start();
 
-        if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
-            $username = $_SESSION["project1_username"];
-            $password = $_SESSION["project1_password"];
-        } else {
-            $data = $_POST;
+        $data = $_POST;
+        if ($data["username"] != null && $data["password"] != null) {
             $username = $data["username"];
             $password = $data["password"];
+        } else {
+            if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
+                $username = $_SESSION["project1_username"];
+                $password = $_SESSION["project1_password"];
+            }
         }
 
+        //echo $username,$password;
         session_write_close();
 
         //正则验证用户名和密码
@@ -1206,8 +1213,6 @@ class Auth extends BaseController
             $ans["status"] = 2004;
             exit(json_encode($ans));
         }
-
-        $model = new UsersModel();
 
         //查询是否有这个用户
         $rst = $model->loginQuery($username, $password);
@@ -1225,6 +1230,16 @@ class Auth extends BaseController
         exit(json_encode($ans));
     }
 
+    public function login()
+    {
+        $this->authenticate(new UsersModel());
+    }
+
+    public function adminLogin()
+    {
+        $this->authenticate(new AdminModel());
+    }
+
     public function exit()
     {
         $ans = array("status" => "1");
@@ -1239,4 +1254,6 @@ class Auth extends BaseController
 
         exit(json_encode($ans));
     }
+
+
 }
