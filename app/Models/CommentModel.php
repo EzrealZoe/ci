@@ -37,6 +37,21 @@ class CommentModel extends Model
         return false;
     }
 
+    //判断用户是否有权限修改这个帖子
+    public function isPermitted($id = null, $userId = null): bool
+    {
+        if ($id != null && $userId != null) {
+            if (count($this->db->select('user_id')
+                    ->where('id', $id)
+                    ->where('user_id', $userId)
+                    ->get(0, 1)
+                    ->getResult()) > 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     //改变评论内容
     public function change($id = null, $data = null)
     {
@@ -55,5 +70,15 @@ class CommentModel extends Model
                 ->delete();
         }
         return false;
+    }
+
+    //分页查看评论
+    public function getComments($post, $pages = 0): array
+    {
+        return $this->db->select('id,content')
+            ->where('post_id', $post)
+            ->orderBy("last_edited_at", "asc")
+            ->get($pages * 50, 50)
+            ->getResult();
     }
 }

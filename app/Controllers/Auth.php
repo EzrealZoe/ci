@@ -8,6 +8,7 @@ use App\Models\UsersModel;
 use DateTime;
 use Exception;
 use ReflectionException;
+use WebGeeker\Validation\Validation;
 
 class Auth extends BaseController
 {
@@ -18,6 +19,73 @@ class Auth extends BaseController
         $mo->changeOrder(1, 5256);
     }
 
+    private function auth($model)
+    {
+        $ans = array("status" => "1");
+        session_start();
+
+        $data = $_POST;
+        if ($data["username"] != null && $data["password"] != null) {
+            $username = $data["username"];
+            $password = $data["password"];
+        } else {
+            if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
+                $username = $_SESSION["project1_username"];
+                $password = $_SESSION["project1_password"];
+            }
+        }
+
+        session_write_close();
+
+        //正则验证用户名和密码
+        if (!preg_match("/^[A-Za-z][A-Za-z0-9_]{3,19}$/", $username)) {
+            $ans["status"] = 2002;
+            exit(json_encode($ans));
+        }
+        if (!preg_match("/^[0-9a-z]{32}$/", $password)) {
+            $ans["status"] = 2004;
+            exit(json_encode($ans));
+        }
+
+        //查询是否有这个用户
+        $rst = $model->loginQuery($username, $password);
+        if (count($rst) > 0) {
+            //用户名成功登录，写session
+            session_start();
+            $_SESSION["project1_username"] = $username;
+            $_SESSION["project1_password"] = $password;
+            setcookie(session_name(), session_id(), time() + 86400);
+            session_write_close();
+        } else {
+            //用户名和密码不正确
+            $ans["status"] = 4001;
+        }
+        exit(json_encode($ans));
+    }
+
+    //判断用户是否登录
+    public function authenticate($model)
+    {
+        session_start();
+        if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
+            try {
+                Validation::validate($_SESSION, [
+                    "project1_username" => "Regexp:/^[A-Za-z][A-Za-z0-9_]{3,19}$/",
+                    "project1_password" => "Regexp:/^[0-9a-z]{32}$/",
+                ]);
+            } catch (\Exception $e) {
+                session_write_close();
+                return false;
+            }
+            session_write_close();
+
+            $rst = $model->loginQuery($_SESSION["project1_username"], $_SESSION["project1_password"]);
+            if (count($rst) > 0) {
+                return $rst[0]->id;
+            }
+        }
+        return false;
+    }
 
     /**
      * @throws ReflectionException
@@ -1171,7 +1239,8 @@ class Auth extends BaseController
         $rst = $model->insert($data);
         if ($rst->connID->errno !== 0) {
             //插入数据库失败
-            echo 3004;
+            $ans["status"] = 3004;
+            exit(json_encode($ans));
         }
 
 
@@ -1185,59 +1254,14 @@ class Auth extends BaseController
         exit(json_encode($ans));
     }
 
-    private function authenticate($model)
-    {
-        $ans = array("status" => "1");
-        session_start();
-
-        $data = $_POST;
-        if ($data["username"] != null && $data["password"] != null) {
-            $username = $data["username"];
-            $password = $data["password"];
-        } else {
-            if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
-                $username = $_SESSION["project1_username"];
-                $password = $_SESSION["project1_password"];
-            }
-        }
-
-        //echo $username,$password;
-        session_write_close();
-
-        //正则验证用户名和密码
-        if (!preg_match("/^[A-Za-z][A-Za-z0-9_]{3,19}$/", $username)) {
-            $ans["status"] = 2002;
-            exit(json_encode($ans));
-        }
-        if (!preg_match("/^[0-9a-z]{32}$/", $password)) {
-            $ans["status"] = 2004;
-            exit(json_encode($ans));
-        }
-
-        //查询是否有这个用户
-        $rst = $model->loginQuery($username, $password);
-        if (count($rst) > 0) {
-            //用户名成功登录，写session
-            session_start();
-            $_SESSION["project1_username"] = $username;
-            $_SESSION["project1_password"] = $password;
-            setcookie(session_name(), session_id(), time() + 86400);
-            session_write_close();
-        } else {
-            //用户名和密码不正确
-            $ans["status"] = 4001;
-        }
-        exit(json_encode($ans));
-    }
-
     public function login()
     {
-        $this->authenticate(new UsersModel());
+        $this->auth(new UsersModel());
     }
 
     public function adminLogin()
     {
-        $this->authenticate(new AdminModel());
+        $this->auth(new AdminModel());
     }
 
     public function exit()
