@@ -1279,5 +1279,31 @@ class Auth extends BaseController
         exit(json_encode($ans));
     }
 
+    public function getUsers()
+    {
+        $ans = array("status" => "1");
+        //查看是否管理员账号登录
+        $adminId = $this->authenticate(new AdminModel());
+        if ($adminId !== false) {
+            try {
+                Validation::validate($_GET, [
+                    "p" => "IntGeLe:1,50",
+                ]);
+            } catch (\Exception $e) {
+                //数据格式不通过
+                $ans["status"] = 2001;
+                exit(json_encode($ans));
+            }
+
+            $model = new UsersModel();
+            $rst = $model->getUsers($_GET['p']);
+            $ans["data"] = $rst;
+            exit(json_encode($ans));
+        } else {
+            //未登录
+            $ans["status"] = 3001;
+        }
+        exit(json_encode($ans));
+    }
 
 }

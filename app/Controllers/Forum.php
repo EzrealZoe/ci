@@ -174,4 +174,23 @@ class Forum extends BaseController
         $ans["data"] = $rst;
         exit(json_encode($ans));
     }
+
+    //获取版块名
+    public function getTopic()
+    {
+        $ans = array("status" => "1");
+        try {
+            Validation::validate($_GET, [
+                "id" => "IntGeLe:1,2100000000",
+            ]);
+        } catch (\Exception $e) {
+            //数据格式不通过
+            $ans["status"] = 2001;
+            exit(json_encode($ans));
+        }
+        $model = new ForumModel();
+        $rst = $model->getTopic($_GET['id']);
+        $ans["data"] = $rst;
+        exit(json_encode($ans));
+    }
 }

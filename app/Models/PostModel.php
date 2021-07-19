@@ -76,10 +76,46 @@ class PostModel extends Model
     //分页查看帖子
     public function getPosts($forum = 1, $pages = 0): array
     {
-        return $this->db->select('id,title')
+        return $this->db->select('id,title,last_edited_at')
             ->where('forum_id', $forum)
             ->orderBy("last_edited_at", "desc")
             ->get($pages * 50, 50)
             ->getResult();
+    }
+
+    //发帖者查看帖子
+    public function getPost($userId, $id): array
+    {
+        return $this->db->select('id,forum_id,title,content')
+            ->where('user_id', $userId)
+            ->where('id', $id)
+            ->get(0, 1)
+            ->getResult();
+    }
+
+    //查看一个帖子
+    public function viewPost($id): array
+    {
+        return $this->db->select('user_id,title,content')
+            ->where('id', $id)
+            ->get(0, 1)
+            ->getResult();
+    }
+
+    //分页查看用户发布的帖子
+    public function getPosted($id, $pages = 0): array
+    {
+        return $this->db->select('id,title')
+            ->where('user_id', $id)
+            ->orderBy("created_at", "desc")
+            ->get($pages * 50, 50)
+            ->getResult();
+    }
+
+    public function addComment($id): bool
+    {
+        return $this->db->set('comment_num', 'comment_num+1', false)
+            ->where('id', $id)
+            ->update();
     }
 }

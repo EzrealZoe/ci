@@ -71,4 +71,13 @@ class ForumModel extends Model
             ->get($pages * 50, 50)
             ->getResult();
     }
+
+    //获取版块名
+    public function getTopic($id): array
+    {
+        return $this->db->select('topic')
+            ->where("id", $id)
+            ->get(0, 1)
+            ->getResult();
+    }
 }

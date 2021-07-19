@@ -180,7 +180,7 @@ class Post extends BaseController
             try {
                 Validation::validate($_POST, [
                     "id" => "IntGeLe:1,2100000000",
-                    "stick" => "Bool",
+                    "isStuck" => "Bool",
                 ]);
             } catch (\Exception $e) {
                 //数据格式不通过
@@ -190,7 +190,7 @@ class Post extends BaseController
             $model = new PostModel();
 
             $date = new DateTime();
-            if ($_POST['stick'] == 'true') {
+            if ($_POST['isStuck'] == 'false') {
                 $date = $date->modify('+100 year');
             }
             $data = array('last_edited_at' => $date->format("Y-m-d H:i:s"));
@@ -222,9 +222,94 @@ class Post extends BaseController
         }
         $model = new PostModel();
         if ($_GET['f'] == null) {
-            $_GET['f'] = 0;
-        };
+            $_GET['f'] = 1;
+        }
         $rst = $model->getPosts($_GET['f'], $_GET['p']);
+        $ans["data"] = $rst;
+        exit(json_encode($ans));
+    }
+
+    //发帖者查看帖子
+    public function getPost()
+    {
+        $ans = array("status" => "1");
+        //查看是否用户账号登录
+        $auth = new Auth();
+        $userId = $auth->authenticate(new UsersModel());
+
+        if ($userId !== false) {
+            try {
+                Validation::validate($_GET, [
+                    "id" => "IntGeLe:1,2100000000",
+                ]);
+            } catch (\Exception $e) {
+                //数据格式不通过
+                $ans["status"] = 2001;
+                exit(json_encode($ans));
+            }
+            if ($_GET['id'] == null) {
+                $ans["status"] = 2002;
+                exit(json_encode($ans));
+            }
+
+            $model = new PostModel();
+            $rst = $model->getPost($userId, $_GET['id']);
+            $ans["data"] = $rst;
+        } else {
+            //未登录
+            $ans["status"] = 3001;
+        }
+        exit(json_encode($ans));
+    }
+
+    //分页获取用户发布的帖子
+    public function getPosted()
+    {
+        $ans = array("status" => "1");
+        //查看是否用户账号登录
+        $auth = new Auth();
+        $userId = $auth->authenticate(new UsersModel());
+
+        if ($userId !== false) {
+            try {
+                Validation::validate($_GET, [
+                    "p" => "IntGeLe:0,50",
+                ]);
+            } catch (\Exception $e) {
+                //数据格式不通过
+                $ans["status"] = 2001;
+                exit(json_encode($ans));
+            }
+            $model = new PostModel();
+            $rst = $model->getPosted($userId, $_GET['p']);
+            $ans["data"] = $rst;
+        } else {
+            //未登录
+            $ans["status"] = 3001;
+        }
+        exit(json_encode($ans));
+    }
+
+    //查看帖子
+    public function viewPost()
+    {
+        $ans = array("status" => "1");
+        try {
+            Validation::validate($_GET, [
+                "id" => "IntGeLe:1,2100000000",
+            ]);
+        } catch (\Exception $e) {
+            //数据格式不通过
+            $ans["status"] = 2001;
+            exit(json_encode($ans));
+        }
+        if ($_GET['id'] == null) {
+            $ans["status"] = 2002;
+            exit(json_encode($ans));
+        }
+
+        $model = new PostModel();
+        $rst = $model->viewPost($_GET['id']);
         $ans["data"] = $rst;
         exit(json_encode($ans));
     }

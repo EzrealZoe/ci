@@ -37,7 +37,7 @@ class CommentModel extends Model
         return false;
     }
 
-    //判断用户是否有权限修改这个帖子
+    //判断用户是否有权限修改这个评论
     public function isPermitted($id = null, $userId = null): bool
     {
         if ($id != null && $userId != null) {
@@ -73,10 +73,10 @@ class CommentModel extends Model
     }
 
     //分页查看评论
-    public function getComments($post, $pages = 0): array
+    public function getComments($id, $pages = 0): array
     {
-        return $this->db->select('id,content')
-            ->where('post_id', $post)
+        return $this->db->select('user_id,content')
+            ->where('post_id', $id)
             ->orderBy("last_edited_at", "asc")
             ->get($pages * 50, 50)
             ->getResult();

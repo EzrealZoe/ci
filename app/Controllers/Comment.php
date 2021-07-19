@@ -45,6 +45,10 @@ class Comment extends BaseController
                     //插入数据库失败
                     $ans["status"] = 3002;
                 }
+                if (!(new PostModel())->addComment($_POST['post_id'])) {
+                    //插入数据库失败
+                    $ans["status"] = 3002;
+                }
             } else {
                 //评论不存在
                 $ans["status"] = 3003;
