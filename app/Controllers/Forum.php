@@ -25,7 +25,7 @@ class Forum extends BaseController
             try {
                 Validation::validate($_POST, [
                     "topic" => "StrLenGeLe:1,10",
-                    "info" => "StrLenGeLe:1,255",
+                    "info" => "StrLenGeLe:0,255",
                 ]);
             } catch (\Exception $e) {
                 //数据格式不通过
@@ -34,6 +34,11 @@ class Forum extends BaseController
             }
 
             $model = new ForumModel();
+            if ($model->isRepeated($_POST['topic'])) {
+                //名重复
+                $ans["status"] = 3003;
+                exit(json_encode($ans));
+            }
             $data = $_POST;
             $data['order'] = 0;
             $rst = $model->insert($data);
@@ -128,27 +133,25 @@ class Forum extends BaseController
         $adminId = $auth->authenticate(new AdminModel());
 
         if ($adminId !== false) {
-            try {
-                Validation::validate($_POST, [
-                    "id" => "IntGeLe:1,2100000000",
-                    "order" => "IntGeLe:1,2100000000",
-                ]);
-            } catch (\Exception $e) {
-                //数据格式不通过
-                $ans["status"] = 2001;
-                exit(json_encode($ans));
-            }
-
             $model = new ForumModel();
-            $data = array(
-                "order" => $_POST['order'],
-            );
-            $rst = $model->change($_POST['id'], $data);
-            if (!$rst) {
-                //更新失败
-                $ans["status"] = 3002;
+            for ($i = 0; $i < count($_POST['data']); $i++) {
+                try {
+                    Validation::validate($_POST['data'][$i], [
+                        "id" => "IntGeLe:1,2100000000",
+                        "order" => "IntGeLe:0,2100000000",
+                    ]);
+                } catch (\Exception $e) {
+                    //数据格式不通过
+                    $ans["status"] = 2001;
+                    exit(json_encode($ans));
+                }
+                $rst = $model->change($_POST['data'][$i]['id'], array("order" => $_POST['data'][$i]['order']));
+                if (!$rst) {
+                    //更新失败
+                    $ans["status"] = 3002;
+                    exit(json_encode($ans));
+                }
             }
-
         } else {
             //未登录
             $ans["status"] = 3001;

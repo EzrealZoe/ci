@@ -118,4 +118,14 @@ class PostModel extends Model
             ->where('id', $id)
             ->update();
     }
+
+    //获取发布者id
+    public function getOwner($id)
+    {
+        return $this->db->select('user_id')
+            ->where('id', $id)
+            ->get(0, 1)
+            ->getResult()[0]
+            ->user_id;
+    }
 }

@@ -21,8 +21,15 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
-        if ($userId !== false) {
+        $userInfo = $auth->authenticating(new UsersModel());
+        if ($userInfo !== false) {
+            if ($userInfo->disable == '1') {
+                //被封禁
+                $ans["status"] = 3002;
+                exit(json_encode($ans));
+            }
+
+            $userId = $userInfo->id;
             try {
                 Validation::validate($_POST, [
                     "title" => "StrLenGeLe:1,30",
@@ -47,7 +54,10 @@ class Post extends BaseController
             if ($rst->connID->errno !== 0) {
                 //插入数据库失败
                 $ans["status"] = 3002;
+            } else {
+                (new UsersModel())->addPost($userId);
             }
+
         } else {
             //未登录
             $ans["status"] = 3001;
@@ -61,9 +71,15 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
+        $userInfo = $auth->authenticating(new UsersModel());
+        if ($userInfo !== false) {
+            if ($userInfo->disable == '1') {
+                //被封禁
+                $ans["status"] = 3002;
+                exit(json_encode($ans));
+            }
 
-        if ($userId !== false) {
+            $userId = $userInfo->id;
             try {
                 Validation::validate($_POST, [
                     "id" => "IntGeLe:1,2100000000",
@@ -125,6 +141,8 @@ class Post extends BaseController
                 if ($rst->connID->errno !== 0) {
                     //删除失败
                     $ans["status"] = 3002;
+                } else {
+                    (new UsersModel())->reducePost($userId);
                 }
             } else {
                 //无权删除他人的帖子或帖子不存在
@@ -156,10 +174,13 @@ class Post extends BaseController
                 exit(json_encode($ans));
             }
             $model = new PostModel();
+            $userId = $model->getOwner($_POST['id']);
             $rst = $model->del($_POST['id']);
             if ($rst->connID->errno !== 0) {
                 //删除失败
                 $ans["status"] = 3002;
+            } else {
+                (new UsersModel())->reducePost($userId);
             }
         } else {
             //管理员未登录

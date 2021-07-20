@@ -46,7 +46,7 @@ class UsersModel extends Model
     public function loginQuery($username = null, $password = null)
     {
         if ($username != null && $password != null) {
-            return $this->db->select('id')
+            return $this->db->select('id,disable')
                 ->where('username', $username)
                 ->where('password', $password)
                 ->get(0, 1)
@@ -81,5 +81,33 @@ class UsersModel extends Model
         return $this->db->select('id,username,post_num,comment_num,disable')
             ->get($pages * 50, 50)
             ->getResult();
+    }
+
+    public function addComment($id): bool
+    {
+        return $this->db->set('comment_num', 'comment_num+1', false)
+            ->where('id', $id)
+            ->update();
+    }
+
+    public function addPost($id): bool
+    {
+        return $this->db->set('post_num', 'post_num+1', false)
+            ->where('id', $id)
+            ->update();
+    }
+
+    public function reduceComment($id): bool
+    {
+        return $this->db->set('comment_num', 'comment_num-1', false)
+            ->where('id', $id)
+            ->update();
+    }
+
+    public function reducePost($id): bool
+    {
+        return $this->db->set('post_num', 'post_num-1', false)
+            ->where('id', $id)
+            ->update();
     }
 }

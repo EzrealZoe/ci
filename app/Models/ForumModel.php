@@ -80,4 +80,13 @@ class ForumModel extends Model
             ->get(0, 1)
             ->getResult();
     }
+
+    //获取版块名
+    public function isRepeated($topic): bool
+    {
+        return count($this->db->select('id')
+                ->where("topic", $topic)
+                ->get(0, 1)
+                ->getResult()) > 0;
+    }
 }

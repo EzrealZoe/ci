@@ -21,8 +21,15 @@ class Comment extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
-        if ($userId !== false) {
+        $userInfo = $auth->authenticating(new UsersModel());
+        if ($userInfo !== false) {
+            if ($userInfo->disable == '1') {
+                //被封禁
+                $ans["status"] = 3002;
+                exit(json_encode($ans));
+            }
+
+            $userId = $userInfo->id;
             try {
                 Validation::validate($_POST, [
                     "post_id" => "IntGeLe:1,2100000000",
@@ -48,6 +55,8 @@ class Comment extends BaseController
                 if (!(new PostModel())->addComment($_POST['post_id'])) {
                     //插入数据库失败
                     $ans["status"] = 3002;
+                } else {
+                    (new UsersModel())->addComment($userId);
                 }
             } else {
                 //评论不存在

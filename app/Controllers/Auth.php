@@ -19,6 +19,7 @@ class Auth extends BaseController
         $mo->changeOrder(1, 5256);
     }
 
+    //判断用户是否登录,并设置cookies
     private function auth($model)
     {
         $ans = array("status" => "1");
@@ -52,6 +53,7 @@ class Auth extends BaseController
         if (count($rst) > 0) {
             //用户名成功登录，写session
             session_start();
+            $ans["disable"] = $rst[0]->disable;
             $_SESSION["project1_username"] = $username;
             $_SESSION["project1_password"] = $password;
             setcookie(session_name(), session_id(), time() + 86400);
@@ -63,7 +65,7 @@ class Auth extends BaseController
         exit(json_encode($ans));
     }
 
-    //判断用户是否登录
+    //判断用户是否登录,返回用户id
     public function authenticate($model)
     {
         session_start();
@@ -82,6 +84,30 @@ class Auth extends BaseController
             $rst = $model->loginQuery($_SESSION["project1_username"], $_SESSION["project1_password"]);
             if (count($rst) > 0) {
                 return $rst[0]->id;
+            }
+        }
+        return false;
+    }
+
+    //判断用户是否登录,返回用户id与是否被封禁
+    public function authenticating($model)
+    {
+        session_start();
+        if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
+            try {
+                Validation::validate($_SESSION, [
+                    "project1_username" => "Regexp:/^[A-Za-z][A-Za-z0-9_]{3,19}$/",
+                    "project1_password" => "Regexp:/^[0-9a-z]{32}$/",
+                ]);
+            } catch (\Exception $e) {
+                session_write_close();
+                return false;
+            }
+            session_write_close();
+
+            $rst = $model->loginQuery($_SESSION["project1_username"], $_SESSION["project1_password"]);
+            if (count($rst) > 0) {
+                return $rst[0];
             }
         }
         return false;
@@ -1299,6 +1325,66 @@ class Auth extends BaseController
             $rst = $model->getUsers($_GET['p']);
             $ans["data"] = $rst;
             exit(json_encode($ans));
+        } else {
+            //未登录
+            $ans["status"] = 3001;
+        }
+        exit(json_encode($ans));
+    }
+
+    //封禁用户
+    public function block()
+    {
+        $ans = array("status" => "1");
+        //查看是否管理员账号登录
+        $adminId = $this->authenticate(new AdminModel());
+        if ($adminId !== false) {
+            try {
+                Validation::validate($_POST, [
+                    "id" => "IntGeLe:1,2100000000",
+                ]);
+            } catch (\Exception $e) {
+                //数据格式不通过
+                $ans["status"] = 2001;
+                exit(json_encode($ans));
+            }
+
+            $model = new UsersModel();
+            $rst = $model->block($_POST['id']);
+            if (!$rst) {
+                //封禁失败
+                $ans["status"] = 3002;
+            }
+        } else {
+            //未登录
+            $ans["status"] = 3001;
+        }
+        exit(json_encode($ans));
+    }
+
+    //解封用户
+    public function unblock()
+    {
+        $ans = array("status" => "1");
+        //查看是否管理员账号登录
+        $adminId = $this->authenticate(new AdminModel());
+        if ($adminId !== false) {
+            try {
+                Validation::validate($_POST, [
+                    "id" => "IntGeLe:1,2100000000",
+                ]);
+            } catch (\Exception $e) {
+                //数据格式不通过
+                $ans["status"] = 2001;
+                exit(json_encode($ans));
+            }
+
+            $model = new UsersModel();
+            $rst = $model->unblock($_POST['id']);
+            if (!$rst) {
+                //解封失败
+                $ans["status"] = 3002;
+            }
         } else {
             //未登录
             $ans["status"] = 3001;
