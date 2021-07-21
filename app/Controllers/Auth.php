@@ -40,6 +40,7 @@ class Auth extends BaseController
                 $username = $_SESSION["project1_username"];
                 $password = $_SESSION["project1_password"];
             } else {
+                $ans["status"] = 3001;
                 exit(json_encode($ans));
             }
         }
