@@ -41,7 +41,7 @@ class PostModel extends Model
             if (count($this->db->select('user_id')
                     ->where('id', $id)
                     ->where('user_id', $userId)
-                    ->get(0, 1)
+                    ->get(1, 0)
                     ->getResult()) > 0) {
                 return true;
             }
@@ -55,7 +55,7 @@ class PostModel extends Model
         if ($id != null) {
             if (count($this->db->select('id')
                     ->where('id', $id)
-                    ->get(0, 1)
+                    ->get(1, 0)
                     ->getResult()) > 0) {
                 return true;
             }
@@ -79,7 +79,7 @@ class PostModel extends Model
         return $this->db->select('id,title,last_edited_at')
             ->where('forum_id', $forum)
             ->orderBy("last_edited_at", "desc")
-            ->get($pages * 50, 50)
+            ->get(50, $pages * 50)
             ->getResult();
     }
 
@@ -89,7 +89,7 @@ class PostModel extends Model
         return $this->db->select('id,forum_id,title,content')
             ->where('user_id', $userId)
             ->where('id', $id)
-            ->get(0, 1)
+            ->get(1, 0)
             ->getResult();
     }
 
@@ -98,7 +98,7 @@ class PostModel extends Model
     {
         return $this->db->select('user_id,title,content')
             ->where('id', $id)
-            ->get(0, 1)
+            ->get(1, 0)
             ->getResult();
     }
 
@@ -108,7 +108,7 @@ class PostModel extends Model
         return $this->db->select('id,title')
             ->where('user_id', $id)
             ->orderBy("created_at", "desc")
-            ->get($pages * 50, 50)
+            ->get(50, $pages * 50)
             ->getResult();
     }
 
@@ -124,7 +124,7 @@ class PostModel extends Model
     {
         return $this->db->select('user_id')
             ->where('id', $id)
-            ->get(0, 1)
+            ->get(1, 0)
             ->getResult()[0]
             ->user_id;
     }

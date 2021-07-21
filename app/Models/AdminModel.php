@@ -23,7 +23,7 @@ class AdminModel extends Model
             return $this->db->select('username')
                 ->where('username', $username)
                 ->where('password', $password)
-                ->get(0, 1)
+                ->get(1, 0)
                 ->getResult();
         }
         return false;

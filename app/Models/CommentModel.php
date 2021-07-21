@@ -31,7 +31,7 @@ class CommentModel extends Model
             return $this->db->select('user_id,content')
                 ->where('post_id', $id)
                 ->orderBy('floor', 'asc')
-                ->get($pages * 50, 50)
+                ->get(50, $pages * 50)
                 ->getResult();
         }
         return false;
@@ -44,7 +44,7 @@ class CommentModel extends Model
             if (count($this->db->select('user_id')
                     ->where('id', $id)
                     ->where('user_id', $userId)
-                    ->get(0, 1)
+                    ->get(1, 0)
                     ->getResult()) > 0) {
                 return true;
             }
@@ -78,7 +78,7 @@ class CommentModel extends Model
         return $this->db->select('user_id,content')
             ->where('post_id', $id)
             ->orderBy("last_edited_at", "asc")
-            ->get($pages * 50, 50)
+            ->get(50, $pages * 50)
             ->getResult();
     }
 }

@@ -68,7 +68,7 @@ class ForumModel extends Model
     {
         return $this->db->select('id,topic')
             ->orderBy("order", "asc")
-            ->get($pages * 50, 50)
+            ->get(50, $pages * 50)
             ->getResult();
     }
 
@@ -77,7 +77,7 @@ class ForumModel extends Model
     {
         return $this->db->select('topic')
             ->where("id", $id)
-            ->get(0, 1)
+            ->get(1, 0)
             ->getResult();
     }
 
@@ -86,7 +86,7 @@ class ForumModel extends Model
     {
         return count($this->db->select('id')
                 ->where("topic", $topic)
-                ->get(0, 1)
+                ->get(1, 0)
                 ->getResult()) > 0;
     }
 }

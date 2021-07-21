@@ -36,7 +36,7 @@ class UsersModel extends Model
         if ($username != null) {
             return $this->db->select('username')
                 ->where('username', $username)
-                ->get(0, 1)
+                ->get(1, 0)
                 ->getResult();
         }
         return false;
@@ -49,7 +49,7 @@ class UsersModel extends Model
             return $this->db->select('id,disable')
                 ->where('username', $username)
                 ->where('password', $password)
-                ->get(0, 1)
+                ->get(1, 0)
                 ->getResult();
         }
         return false;
@@ -79,7 +79,7 @@ class UsersModel extends Model
     public function getUsers($pages = 0): array
     {
         return $this->db->select('id,username,post_num,comment_num,disable')
-            ->get($pages * 50, 50)
+            ->get(50, $pages * 50)
             ->getResult();
     }
 
