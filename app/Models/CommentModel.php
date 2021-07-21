@@ -40,19 +40,18 @@ class CommentModel extends Model
         return false;
     }
 
-    //判断用户是否有权限修改这个评论
-    public function isPermitted($id = null, $userId = null): bool
+    //查询单条信息
+    public function getComment($select, $id = null, $userId = null): array
     {
-        if ($id != null && $userId != null) {
-            if (count($this->db->select('user_id')
-                    ->where('id', $id)
-                    ->where('user_id', $userId)
-                    ->get(1, 0)
-                    ->getResult()) > 0) {
-                return true;
-            }
+        $this->db->select($select);
+        if ($id != null) {
+            $this->db->where('id', $id);
         }
-        return false;
+        if ($userId != null) {
+            $this->db->where('user_id', $userId);
+        }
+        return $this->db->get(1, 0)
+            ->getResult();
     }
 
     //改变评论内容

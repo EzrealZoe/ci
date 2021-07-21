@@ -57,8 +57,8 @@ class Comment extends BaseController
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
-        if (!($this->postModel)->exists($_POST['post_id'])) {
-            //评论不存在
+        if (count($this->postModel->getPost("id", $_POST['post_id'])) < 1) {
+            //帖子不存在
             $ans["status"] = 3003;
             exit(json_encode($ans));
         }
@@ -109,7 +109,7 @@ class Comment extends BaseController
             exit(json_encode($ans));
         }
         $model = $this->commentModel;
-        if (!$model->isPermitted($_POST['id'], $userId)) {
+        if (count($model->getComment("id", $_POST['id'], $userId)) < 1) {
             //无权修改他人的评论或评论不存在
             $ans["status"] = 3003;
             exit(json_encode($ans));
@@ -151,7 +151,7 @@ class Comment extends BaseController
             exit(json_encode($ans));
         }
         $model = $this->commentModel;
-        if ($model->isPermitted($_POST['id'], $userId)) {
+        if (count($model->getComment("id", $_POST['id'], $userId)) < 1) {
             //无权删除他人的评论或评论不存在
             $ans["status"] = 3003;
             exit(json_encode($ans));

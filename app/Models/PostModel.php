@@ -34,33 +34,18 @@ class PostModel extends Model
         return false;
     }
 
-    //判断用户是否有权限修改这个帖子
-    public function isPermitted($id = null, $userId = null): bool
+    //查询单条信息
+    public function getPost($select, $id = null, $userId = null): array
     {
-        if ($id != null && $userId != null) {
-            if (count($this->db->select('user_id')
-                    ->where('id', $id)
-                    ->where('user_id', $userId)
-                    ->get(1, 0)
-                    ->getResult()) > 0) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    //判断是否有这个帖子
-    public function exists($id = null): bool
-    {
+        $this->db->select($select);
         if ($id != null) {
-            if (count($this->db->select('id')
-                    ->where('id', $id)
-                    ->get(1, 0)
-                    ->getResult()) > 0) {
-                return true;
-            }
+            $this->db->where('id', $id);
         }
-        return false;
+        if ($userId != null) {
+            $this->db->where('user_id', $userId);
+        }
+        return $this->db->get(1, 0)
+            ->getResult();
     }
 
     //删除帖子
@@ -86,25 +71,6 @@ class PostModel extends Model
             ->getResult();
     }
 
-    //发帖者查看帖子
-    public function getPost($userId, $id): array
-    {
-        return $this->db->select('id,forum_id,title,content')
-            ->where('user_id', $userId)
-            ->where('id', $id)
-            ->get(1, 0)
-            ->getResult();
-    }
-
-    //查看一个帖子
-    public function viewPost($id): array
-    {
-        return $this->db->select('user_id,title,content')
-            ->where('id', $id)
-            ->get(1, 0)
-            ->getResult();
-    }
-
     //分页查看用户发布的帖子
     public function getPosted($id, $pages = 1): array
     {
@@ -125,13 +91,4 @@ class PostModel extends Model
             ->update();
     }
 
-    //获取发布者id
-    public function getOwner($id)
-    {
-        return $this->db->select('user_id')
-            ->where('id', $id)
-            ->get(1, 0)
-            ->getResult()[0]
-            ->user_id;
-    }
 }

@@ -111,7 +111,7 @@ class Post extends BaseController
             exit(json_encode($ans));
         }
         $model = $this->postModel;
-        if (!$model->isPermitted($_POST['id'], $userId)) {
+        if (count($model->getPost("id", $_POST['id'], $userId)) < 1) {
             //无权修改他人的帖子或帖子不存在
             $ans["status"] = 3003;
             exit(json_encode($ans));
@@ -157,7 +157,7 @@ class Post extends BaseController
             exit(json_encode($ans));
         }
         $model = $this->postModel;
-        if (!$model->isPermitted($_POST['id'], $userId)) {
+        if (count($model->getPost("id", $_POST['id'], $userId)) < 1) {
             //无权删除他人的帖子或帖子不存在
             $ans["status"] = 3003;
             exit(json_encode($ans));
@@ -198,7 +198,7 @@ class Post extends BaseController
             exit(json_encode($ans));
         }
         $model = $this->postModel;
-        $userId = $model->getOwner($_POST['id']);
+        $userId = $model->getPost("user_id", $_POST['id'])[0]->user_id;
         $rst = $model->del($_POST['id']);
         if ($rst->connID->errno !== 0) {
             //删除失败
@@ -302,7 +302,7 @@ class Post extends BaseController
         }
 
         $model = $this->postModel;
-        $rst = $model->getPost($userId, $_GET['id']);
+        $rst = $model->getPost("id,forum_id,title,content", $_GET['id'], $userId);
         $ans["data"] = $rst;
 
         exit(json_encode($ans));
@@ -357,7 +357,7 @@ class Post extends BaseController
         }
 
         $model = $this->postModel;
-        $rst = $model->viewPost($_GET['id']);
+        $rst = $model->getPost("user_id,title,content", $_GET['id']);
         $ans["data"] = $rst;
         exit(json_encode($ans));
     }
