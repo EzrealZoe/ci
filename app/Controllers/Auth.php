@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
-use App\Models\ForumModel;
 use App\Models\UsersModel;
 use DateTime;
 use Exception;
@@ -12,6 +11,15 @@ use WebGeeker\Validation\Validation;
 
 class Auth extends BaseController
 {
+    private $userModel;
+    private $adminModel;
+
+    public function __construct()
+    {
+        $this->userModel = new UsersModel();
+        $this->adminModel = new AdminModel();
+    }
+
     //测试用
     public function test()
     {
@@ -31,6 +39,8 @@ class Auth extends BaseController
             if (isset($_SESSION["project1_username"]) && isset($_SESSION["project1_password"])) {
                 $username = $_SESSION["project1_username"];
                 $password = $_SESSION["project1_password"];
+            } else {
+                exit(json_encode($ans));
             }
         }
 
@@ -1245,7 +1255,7 @@ class Auth extends BaseController
         }
 
 
-        $model = new UsersModel();
+        $model = $this->userModel;
 
         //查询是否有这个用户
         $rst = $model->usernameQuery($username);
@@ -1280,12 +1290,12 @@ class Auth extends BaseController
 
     public function login()
     {
-        $this->auth(new UsersModel());
+        $this->auth($this->userModel);
     }
 
     public function adminLogin()
     {
-        $this->auth(new AdminModel());
+        $this->auth($this->adminModel);
     }
 
     public function exit()
@@ -1307,7 +1317,7 @@ class Auth extends BaseController
     {
         $ans = array("status" => "1");
         //查看是否管理员账号登录
-        $adminId = $this->authenticate(new AdminModel());
+        $adminId = $this->authenticate($this->adminModel);
         if ($adminId !== false) {
             try {
                 Validation::validate($_GET, [
@@ -1319,7 +1329,7 @@ class Auth extends BaseController
                 exit(json_encode($ans));
             }
 
-            $model = new UsersModel();
+            $model = $this->userModel;
             $rst = $model->getUsers($_GET['p']);
             $ans["data"] = $rst;
             exit(json_encode($ans));
@@ -1335,7 +1345,7 @@ class Auth extends BaseController
     {
         $ans = array("status" => "1");
         //查看是否管理员账号登录
-        $adminId = $this->authenticate(new AdminModel());
+        $adminId = $this->authenticate($this->adminModel);
         if ($adminId !== false) {
             try {
                 Validation::validate($_POST, [
@@ -1347,7 +1357,7 @@ class Auth extends BaseController
                 exit(json_encode($ans));
             }
 
-            $model = new UsersModel();
+            $model = $this->userModel;
             $rst = $model->block($_POST['id']);
             if (!$rst) {
                 //封禁失败
@@ -1365,7 +1375,7 @@ class Auth extends BaseController
     {
         $ans = array("status" => "1");
         //查看是否管理员账号登录
-        $adminId = $this->authenticate(new AdminModel());
+        $adminId = $this->authenticate($this->adminModel);
         if ($adminId == false) {
             $ans["status"] = 3001;
             exit(json_encode($ans));
@@ -1380,7 +1390,7 @@ class Auth extends BaseController
             exit(json_encode($ans));
         }
 
-        $model = new UsersModel();
+        $model = $this->userModel;
         $rst = $model->unblock($_POST['id']);
         if (!$rst) {
             //解封失败

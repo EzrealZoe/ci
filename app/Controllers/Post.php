@@ -12,6 +12,17 @@ use DateTime;
 class Post extends BaseController
 {
 
+    private $userModel;
+    private $adminModel;
+    private $postModel;
+
+    public function __construct()
+    {
+        $this->userModel = new UsersModel();
+        $this->adminModel = new AdminModel();
+        $this->postModel = new PostModel();
+    }
+    
     /**
      * @throws ReflectionException
      */
@@ -21,7 +32,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userInfo = $auth->authenticating(new UsersModel());
+        $userInfo = $auth->authenticating($this->userModel);
         if ($userInfo !== false) {
             if ($userInfo->disable == '1') {
                 //被封禁
@@ -42,7 +53,7 @@ class Post extends BaseController
                 exit(json_encode($ans));
             }
 
-            $model = new PostModel();
+            $model = $this->postModel;
             $data = $_POST;
             $date = (new DateTime())->format("Y-m-d H:i:s");
             $data['created_at'] = $date;
@@ -55,7 +66,7 @@ class Post extends BaseController
                 //插入数据库失败
                 $ans["status"] = 3002;
             } else {
-                (new UsersModel())->addPost($userId);
+                ($this->userModel)->addPost($userId);
             }
 
         } else {
@@ -71,7 +82,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userInfo = $auth->authenticating(new UsersModel());
+        $userInfo = $auth->authenticating($this->userModel);
         if ($userInfo !== false) {
             if ($userInfo->disable == '1') {
                 //被封禁
@@ -92,7 +103,7 @@ class Post extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new PostModel();
+            $model = $this->postModel;
             if ($model->isPermitted($_POST['id'], $userId)) {
                 $data = array(
                     "title" => $_POST['title'],
@@ -123,7 +134,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
+        $userId = $auth->authenticate($this->userModel);
 
         if ($userId !== false) {
             try {
@@ -135,14 +146,14 @@ class Post extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new PostModel();
+            $model = $this->postModel;
             if ($model->isPermitted($_POST['id'], $userId)) {
                 $rst = $model->del($_POST['id']);
                 if ($rst->connID->errno !== 0) {
                     //删除失败
                     $ans["status"] = 3002;
                 } else {
-                    (new UsersModel())->reducePost($userId);
+                    ($this->userModel)->reducePost($userId);
                 }
             } else {
                 //无权删除他人的帖子或帖子不存在
@@ -161,7 +172,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $auth = new Auth();
-        $adminId = $auth->authenticate(new AdminModel());
+        $adminId = $auth->authenticate($this->adminModel);
 
         if ($adminId !== false) {
             try {
@@ -173,14 +184,14 @@ class Post extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new PostModel();
+            $model = $this->postModel;
             $userId = $model->getOwner($_POST['id']);
             $rst = $model->del($_POST['id']);
             if ($rst->connID->errno !== 0) {
                 //删除失败
                 $ans["status"] = 3002;
             } else {
-                (new UsersModel())->reducePost($userId);
+                ($this->userModel)->reducePost($userId);
             }
         } else {
             //管理员未登录
@@ -195,7 +206,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $auth = new Auth();
-        $adminId = $auth->authenticate(new AdminModel());
+        $adminId = $auth->authenticate($this->adminModel);
 
         if ($adminId !== false) {
             try {
@@ -208,7 +219,7 @@ class Post extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new PostModel();
+            $model = $this->postModel;
 
             $date = new DateTime();
             if ($_POST['isStuck'] == 'false') {
@@ -241,7 +252,7 @@ class Post extends BaseController
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
-        $model = new PostModel();
+        $model = $this->postModel;
         if ($_GET['f'] == null) {
             $_GET['f'] = 1;
         }
@@ -256,7 +267,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
+        $userId = $auth->authenticate($this->userModel);
 
         if ($userId !== false) {
             try {
@@ -273,7 +284,7 @@ class Post extends BaseController
                 exit(json_encode($ans));
             }
 
-            $model = new PostModel();
+            $model = $this->postModel;
             $rst = $model->getPost($userId, $_GET['id']);
             $ans["data"] = $rst;
         } else {
@@ -289,7 +300,7 @@ class Post extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
+        $userId = $auth->authenticate($this->userModel);
 
         if ($userId !== false) {
             try {
@@ -301,7 +312,7 @@ class Post extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new PostModel();
+            $model = $this->postModel;
             $rst = $model->getPosted($userId, $_GET['p']);
             $ans["data"] = $rst;
         } else {
@@ -329,7 +340,7 @@ class Post extends BaseController
             exit(json_encode($ans));
         }
 
-        $model = new PostModel();
+        $model = $this->postModel;
         $rst = $model->viewPost($_GET['id']);
         $ans["data"] = $rst;
         exit(json_encode($ans));

@@ -10,6 +10,15 @@ use App\Models\AdminModel;
 class Forum extends BaseController
 {
 
+    private $adminModel;
+    private $forumModel;
+
+    public function __construct()
+    {
+        $this->adminModel = new AdminModel();
+        $this->forumModel = new ForumModel();
+    }
+
     /**
      * @throws ReflectionException
      */
@@ -19,7 +28,7 @@ class Forum extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $auth = new Auth();
-        $adminId = $auth->authenticate(new AdminModel());
+        $adminId = $auth->authenticate($this->adminModel);
 
         if ($adminId !== false) {
             try {
@@ -33,7 +42,7 @@ class Forum extends BaseController
                 exit(json_encode($ans));
             }
 
-            $model = new ForumModel();
+            $model = $this->forumModel;
             if ($model->isRepeated($_POST['topic'])) {
                 //名重复
                 $ans["status"] = 3003;
@@ -59,7 +68,7 @@ class Forum extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $auth = new Auth();
-        $adminId = $auth->authenticate(new AdminModel());
+        $adminId = $auth->authenticate($this->adminModel);
 
         if ($adminId !== false) {
             try {
@@ -74,7 +83,7 @@ class Forum extends BaseController
                 exit(json_encode($ans));
             }
 
-            $model = new ForumModel();
+            $model = $this->forumModel;
             $data = array(
                 "topic" => $_POST['topic'],
                 "info" => $_POST['info'],
@@ -98,7 +107,7 @@ class Forum extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $auth = new Auth();
-        $adminId = $auth->authenticate(new AdminModel());
+        $adminId = $auth->authenticate($this->adminModel);
 
         if ($adminId !== false) {
             try {
@@ -110,7 +119,7 @@ class Forum extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new ForumModel();
+            $model = $this->forumModel;
             $rst = $model->del($_POST['id']);
             if ($rst->connID->errno !== 0) {
                 //删除失败
@@ -130,10 +139,10 @@ class Forum extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $auth = new Auth();
-        $adminId = $auth->authenticate(new AdminModel());
+        $adminId = $auth->authenticate($this->adminModel);
 
         if ($adminId !== false) {
-            $model = new ForumModel();
+            $model = $this->forumModel;
             for ($i = 0; $i < count($_POST['data']); $i++) {
                 try {
                     Validation::validate($_POST['data'][$i], [
@@ -172,7 +181,7 @@ class Forum extends BaseController
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
-        $model = new ForumModel();
+        $model = $this->forumModel;
         $rst = $model->getForums($_GET['p']);
         $ans["data"] = $rst;
         exit(json_encode($ans));
@@ -191,7 +200,7 @@ class Forum extends BaseController
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
-        $model = new ForumModel();
+        $model = $this->forumModel;
         $rst = $model->getTopic($_GET['id']);
         $ans["data"] = $rst;
         exit(json_encode($ans));

@@ -12,6 +12,17 @@ use DateTime;
 class Comment extends BaseController
 {
 
+    private $userModel;
+    private $commentModel;
+    private $postModel;
+
+    public function __construct()
+    {
+        $this->userModel = new UsersModel();
+        $this->commentModel = new CommentModel();
+        $this->postModel = new PostModel();
+    }
+
     /**
      * @throws ReflectionException
      */
@@ -21,7 +32,7 @@ class Comment extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userInfo = $auth->authenticating(new UsersModel());
+        $userInfo = $auth->authenticating($this->userModel);
         if ($userInfo !== false) {
             if ($userInfo->disable == '1') {
                 //被封禁
@@ -40,8 +51,8 @@ class Comment extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            if ((new PostModel())->exists($_POST['post_id'])) {
-                $model = new CommentModel();
+            if (($this->postModel)->exists($_POST['post_id'])) {
+                $model = $this->commentModel;
                 $data = $_POST;
                 $date = (new DateTime())->format("Y-m-d H:i:s");
                 $data['created_at'] = $date;
@@ -52,11 +63,11 @@ class Comment extends BaseController
                     //插入数据库失败
                     $ans["status"] = 3002;
                 }
-                if (!(new PostModel())->addComment($_POST['post_id'])) {
+                if (!($this->postModel)->addComment($_POST['post_id'])) {
                     //插入数据库失败
                     $ans["status"] = 3002;
                 } else {
-                    (new UsersModel())->addComment($userId);
+                    ($this->userModel)->addComment($userId);
                 }
             } else {
                 //评论不存在
@@ -75,7 +86,7 @@ class Comment extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
+        $userId = $auth->authenticate($this->userModel);
 
         if ($userId !== false) {
             try {
@@ -88,7 +99,7 @@ class Comment extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new CommentModel();
+            $model = $this->commentModel;
             if ($model->isPermitted($_POST['id'], $userId)) {
                 $data = array(
                     "content" => $_POST['content']
@@ -117,7 +128,7 @@ class Comment extends BaseController
         $ans = array("status" => "1");
         //查看是否用户账号登录
         $auth = new Auth();
-        $userId = $auth->authenticate(new UsersModel());
+        $userId = $auth->authenticate($this->userModel);
 
         if ($userId !== false) {
             try {
@@ -129,7 +140,7 @@ class Comment extends BaseController
                 $ans["status"] = 2001;
                 exit(json_encode($ans));
             }
-            $model = new CommentModel();
+            $model = $this->commentModel;
             if ($model->isPermitted($_POST['id'], $userId)) {
                 $rst = $model->del($_POST['id']);
                 if ($rst->connID->errno !== 0) {
@@ -161,7 +172,7 @@ class Comment extends BaseController
             $ans["status"] = 2001;
             exit(json_encode($ans));
         }
-        $model = new CommentModel();
+        $model = $this->commentModel;
         $rst = $model->getComments($_GET['id'], $_GET['p']);
         $ans["data"] = $rst;
         exit(json_encode($ans));
