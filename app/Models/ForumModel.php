@@ -43,12 +43,11 @@ class ForumModel extends Model
         return false;
     }
 
-    //改变版块顺序
-    public function changeOrder($id = null, $order = null)
+    //批量改变版块顺序
+    public function changeOrder($data)
     {
-        if ($id != null && $order != null) {
-            return $this->db->where('id', $id)
-                ->update(array('order' => $order));
+        if ($data != null) {
+            return $this->db->updateBatch($data, "id");
         }
         return false;
     }
@@ -66,6 +65,9 @@ class ForumModel extends Model
     //分页获取版块
     public function getForums($pages = 1): array
     {
+        if ($pages == null) {
+            $pages = 1;
+        }
         return $this->db->select('id,topic')
             ->orderBy("order", "asc")
             ->get(50, $pages * 50 - 50)

@@ -154,12 +154,12 @@ class Forum extends BaseController
                     $ans["status"] = 2001;
                     exit(json_encode($ans));
                 }
-                $rst = $model->change($_POST['data'][$i]['id'], array("order" => $_POST['data'][$i]['order']));
-                if (!$rst) {
-                    //更新失败
-                    $ans["status"] = 3002;
-                    exit(json_encode($ans));
-                }
+            }
+            $rst = $model->changeOrder($_POST['data']);
+            if (!$rst) {
+                //更新失败
+                $ans["status"] = 3002;
+                exit(json_encode($ans));
             }
         } else {
             //未登录
