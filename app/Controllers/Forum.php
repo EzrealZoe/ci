@@ -30,35 +30,37 @@ class Forum extends BaseController
         $auth = new Auth();
         $adminId = $auth->authenticate($this->adminModel);
 
-        if ($adminId !== false) {
-            try {
-                Validation::validate($_POST, [
-                    "topic" => "StrLenGeLe:1,10",
-                    "info" => "StrLenGeLe:0,255",
-                ]);
-            } catch (\Exception $e) {
-                //数据格式不通过
-                $ans["status"] = 2001;
-                exit(json_encode($ans));
-            }
-
-            $model = $this->forumModel;
-            if ($model->isRepeated($_POST['topic'])) {
-                //名重复
-                $ans["status"] = 3003;
-                exit(json_encode($ans));
-            }
-            $data = $_POST;
-            $data['order'] = 0;
-            $rst = $model->insert($data);
-            if ($rst->connID->errno !== 0) {
-                //插入数据库失败
-                $ans["status"] = 3002;
-            }
-        } else {
+        if ($adminId === false) {
             //未登录
             $ans["status"] = 3001;
+            exit(json_encode($ans));
         }
+
+        try {
+            Validation::validate($_POST, [
+                "topic" => "StrLenGeLe:1,10",
+                "info" => "StrLenGeLe:0,255",
+            ]);
+        } catch (\Exception $e) {
+            //数据格式不通过
+            $ans["status"] = 2001;
+            exit(json_encode($ans));
+        }
+
+        $model = $this->forumModel;
+        if ($model->isRepeated($_POST['topic'])) {
+            //名重复
+            $ans["status"] = 3003;
+            exit(json_encode($ans));
+        }
+        $data = $_POST;
+        $data['order'] = 0;
+        $rst = $model->insert($data);
+        if ($rst->connID->errno !== 0) {
+            //插入数据库失败
+            $ans["status"] = 3002;
+        }
+
         exit(json_encode($ans));
     }
 
@@ -70,34 +72,36 @@ class Forum extends BaseController
         $auth = new Auth();
         $adminId = $auth->authenticate($this->adminModel);
 
-        if ($adminId !== false) {
-            try {
-                Validation::validate($_POST, [
-                    "id" => "IntGeLe:1,2100000000",
-                    "topic" => "StrLenGeLe:1,10",
-                    "info" => "StrLenGeLe:1,255",
-                ]);
-            } catch (\Exception $e) {
-                //数据格式不通过
-                $ans["status"] = 2001;
-                exit(json_encode($ans));
-            }
-
-            $model = $this->forumModel;
-            $data = array(
-                "topic" => $_POST['topic'],
-                "info" => $_POST['info'],
-            );
-            $rst = $model->change($_POST['id'], $data);
-            if (!$rst) {
-                //更新失败
-                $ans["status"] = 3002;
-            }
-
-        } else {
+        if ($adminId === false) {
             //未登录
             $ans["status"] = 3001;
+            exit(json_encode($ans));
         }
+
+
+        try {
+            Validation::validate($_POST, [
+                "id" => "IntGeLe:1,2100000000",
+                "topic" => "StrLenGeLe:1,10",
+                "info" => "StrLenGeLe:1,255",
+            ]);
+        } catch (\Exception $e) {
+            //数据格式不通过
+            $ans["status"] = 2001;
+            exit(json_encode($ans));
+        }
+
+        $model = $this->forumModel;
+        $data = array(
+            "topic" => $_POST['topic'],
+            "info" => $_POST['info'],
+        );
+        $rst = $model->change($_POST['id'], $data);
+        if (!$rst) {
+            //更新失败
+            $ans["status"] = 3002;
+        }
+
         exit(json_encode($ans));
     }
 
@@ -109,27 +113,28 @@ class Forum extends BaseController
         $auth = new Auth();
         $adminId = $auth->authenticate($this->adminModel);
 
-        if ($adminId !== false) {
-            try {
-                Validation::validate($_POST, [
-                    "id" => "IntGeLe:1,2100000000",
-                ]);
-            } catch (\Exception $e) {
-                //数据格式不通过
-                $ans["status"] = 2001;
-                exit(json_encode($ans));
-            }
-            $model = $this->forumModel;
-            $rst = $model->del($_POST['id']);
-            if ($rst->connID->errno !== 0) {
-                //删除失败
-                $ans["status"] = 3002;
-            }
-
-        } else {
+        if ($adminId === false) {
             //未登录
             $ans["status"] = 3001;
+            exit(json_encode($ans));
         }
+
+        try {
+            Validation::validate($_POST, [
+                "id" => "IntGeLe:1,2100000000",
+            ]);
+        } catch (\Exception $e) {
+            //数据格式不通过
+            $ans["status"] = 2001;
+            exit(json_encode($ans));
+        }
+        $model = $this->forumModel;
+        $rst = $model->del($_POST['id']);
+        if ($rst->connID->errno !== 0) {
+            //删除失败
+            $ans["status"] = 3002;
+        }
+
         exit(json_encode($ans));
     }
 
@@ -141,30 +146,32 @@ class Forum extends BaseController
         $auth = new Auth();
         $adminId = $auth->authenticate($this->adminModel);
 
-        if ($adminId !== false) {
-            $model = $this->forumModel;
-            for ($i = 0; $i < count($_POST['data']); $i++) {
-                try {
-                    Validation::validate($_POST['data'][$i], [
-                        "id" => "IntGeLe:1,2100000000",
-                        "order" => "IntGeLe:0,2100000000",
-                    ]);
-                } catch (\Exception $e) {
-                    //数据格式不通过
-                    $ans["status"] = 2001;
-                    exit(json_encode($ans));
-                }
-            }
-            $rst = $model->changeOrder($_POST['data']);
-            if (!$rst) {
-                //更新失败
-                $ans["status"] = 3002;
-                exit(json_encode($ans));
-            }
-        } else {
+        if ($adminId === false) {
             //未登录
             $ans["status"] = 3001;
+            exit(json_encode($ans));
         }
+
+        $model = $this->forumModel;
+        for ($i = 0; $i < count($_POST['data']); $i++) {
+            try {
+                Validation::validate($_POST['data'][$i], [
+                    "id" => "IntGeLe:1,2100000000",
+                    "order" => "IntGeLe:0,2100000000",
+                ]);
+            } catch (\Exception $e) {
+                //数据格式不通过
+                $ans["status"] = 2001;
+                exit(json_encode($ans));
+            }
+        }
+        $rst = $model->changeOrder($_POST['data']);
+        if (!$rst) {
+            //更新失败
+            $ans["status"] = 3002;
+            exit(json_encode($ans));
+        }
+
         exit(json_encode($ans));
     }
 
