@@ -76,6 +76,9 @@ class PostModel extends Model
     //分页查看帖子
     public function getPosts($forum = 1, $pages = 1): array
     {
+        if ($pages == null) {
+            $pages = 1;
+        }
         return $this->db->select('id,title,last_edited_at')
             ->where('forum_id', $forum)
             ->orderBy("last_edited_at", "desc")
@@ -105,6 +108,9 @@ class PostModel extends Model
     //分页查看用户发布的帖子
     public function getPosted($id, $pages = 1): array
     {
+        if ($pages == null) {
+            $pages = 1;
+        }
         return $this->db->select('id,title')
             ->where('user_id', $id)
             ->orderBy("created_at", "desc")

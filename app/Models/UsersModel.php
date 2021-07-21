@@ -78,6 +78,9 @@ class UsersModel extends Model
     //分页查看用户信息
     public function getUsers($pages = 1): array
     {
+        if ($pages == null) {
+            $pages = 1;
+        }
         return $this->db->select('id,username,post_num,comment_num,disable')
             ->get(50, $pages * 50 - 50)
             ->getResult();
