@@ -25,13 +25,13 @@ class CommentModel extends Model
     }
 
     //分页查看评论
-    public function post($id = null, $pages = 0)
+    public function post($id = null, $pages = 1)
     {
         if ($id != null) {
             return $this->db->select('user_id,content')
                 ->where('post_id', $id)
                 ->orderBy('floor', 'asc')
-                ->get(50, $pages * 50)
+                ->get(50, $pages * 50 - 50)
                 ->getResult();
         }
         return false;
@@ -73,12 +73,12 @@ class CommentModel extends Model
     }
 
     //分页查看评论
-    public function getComments($id, $pages = 0): array
+    public function getComments($id, $pages = 1): array
     {
         return $this->db->select('user_id,content')
             ->where('post_id', $id)
             ->orderBy("last_edited_at", "asc")
-            ->get(50, $pages * 50)
+            ->get(50, $pages * 50 - 50)
             ->getResult();
     }
 }

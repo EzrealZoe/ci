@@ -64,11 +64,11 @@ class ForumModel extends Model
     }
 
     //分页获取版块
-    public function getForums($pages = 0): array
+    public function getForums($pages = 1): array
     {
         return $this->db->select('id,topic')
             ->orderBy("order", "asc")
-            ->get(50, $pages * 50)
+            ->get(50, $pages * 50 - 50)
             ->getResult();
     }
 

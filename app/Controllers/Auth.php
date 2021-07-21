@@ -15,8 +15,6 @@ class Auth extends BaseController
     //测试用
     public function test()
     {
-        $mo = new ForumModel();
-        $mo->changeOrder(1, 5256);
     }
 
     //判断用户是否登录,并设置cookies
@@ -1368,26 +1366,25 @@ class Auth extends BaseController
         $ans = array("status" => "1");
         //查看是否管理员账号登录
         $adminId = $this->authenticate(new AdminModel());
-        if ($adminId !== false) {
-            try {
-                Validation::validate($_POST, [
-                    "id" => "IntGeLe:1,2100000000",
-                ]);
-            } catch (\Exception $e) {
-                //数据格式不通过
-                $ans["status"] = 2001;
-                exit(json_encode($ans));
-            }
-
-            $model = new UsersModel();
-            $rst = $model->unblock($_POST['id']);
-            if (!$rst) {
-                //解封失败
-                $ans["status"] = 3002;
-            }
-        } else {
-            //未登录
+        if ($adminId == false) {
             $ans["status"] = 3001;
+            exit(json_encode($ans));
+        }
+        try {
+            Validation::validate($_POST, [
+                "id" => "IntGeLe:1,2100000000",
+            ]);
+        } catch (\Exception $e) {
+            //数据格式不通过
+            $ans["status"] = 2001;
+            exit(json_encode($ans));
+        }
+
+        $model = new UsersModel();
+        $rst = $model->unblock($_POST['id']);
+        if (!$rst) {
+            //解封失败
+            $ans["status"] = 3002;
         }
         exit(json_encode($ans));
     }
