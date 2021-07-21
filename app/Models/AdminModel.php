@@ -20,7 +20,7 @@ class AdminModel extends Model
     public function loginQuery($username = null, $password = null)
     {
         if ($username != null && $password != null) {
-            return $this->db->select('username')
+            return $this->db->select('id')
                 ->where('username', $username)
                 ->where('password', $password)
                 ->get(1, 0)
